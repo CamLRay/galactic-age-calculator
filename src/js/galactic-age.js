@@ -14,7 +14,7 @@ export class GalacticAge {
     this.neptune = parseFloat((age/164.78).toFixed(4).slice(0,-2));
   }
 
-  lifeLeft(expectancy) {
+  lifeLeft(expectancy){
     this.expectancyBeat = false;
     this.earthLeft = parseFloat((expectancy - this.earth).toFixed(4).slice(0,-2));
     this.mercuryLeft = parseFloat((this.earthLeft/.24).toFixed(4).slice(0,-2));
@@ -45,5 +45,14 @@ export class User{
     this.birthdate = birthdate;
     this.todaysDate = todaysDate;
     this.lifeExpectancy = lifeExpectancy;
+  }
+
+  findAge(){
+    
+    const birthdate = this.birthdate.split("-");
+    const todaysDate = this.todaysDate.split("-");
+    const yearsToBirth = parseInt(birthdate[2]) + (parseInt(birthdate[0])/12) + (parseInt(birthdate[1])/30.437);
+    const yearsToToday = parseInt(todaysDate[2]) + (parseInt(todaysDate[0])/12) + (parseInt(todaysDate[1])/30.437);
+    this.age = parseFloat((yearsToToday - yearsToBirth).toFixed(2).slice(0,-2));
   }
 }
