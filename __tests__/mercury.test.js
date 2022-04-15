@@ -70,4 +70,10 @@ describe("Galactic Age", () => {
     expect(galacticAge.uranusLeft).toEqual(0.01);
     expect(galacticAge.neptuneLeft).toEqual(0.00);
   });
+
+  test("It should add a boolean to the object if the life expectancy is exceeded", () => {
+    galacticAge.currentAge(80);
+    galacticAge.lifeLeft(78.79);
+    expect(galacticAge.expectancyBeat).toEqual(true);
+  });
 });
