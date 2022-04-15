@@ -15,6 +15,7 @@ export class GalacticAge {
   }
 
   lifeLeft(expectancy) {
+    this.expectancyBeat = false;
     this.earthLeft = parseFloat((expectancy - this.earth).toFixed(4).slice(0,-2));
     this.mercuryLeft = parseFloat((this.earthLeft/.24).toFixed(4).slice(0,-2));
     this.venusLeft = parseFloat((this.earthLeft/.62).toFixed(4).slice(0,-2));
