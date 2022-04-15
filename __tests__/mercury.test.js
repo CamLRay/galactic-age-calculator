@@ -29,8 +29,8 @@ describe("Galactic Age", () => {
     expect(galacticAge.earth).toEqual(29);
     expect(galacticAge.mars).toEqual(15.42);
     expect(galacticAge.jupiter).toEqual(2.44);
-    expect(galacticAge.saturn).toEqual(.98); //29.457 years for orbit
-    expect(galacticAge.uranus).toEqual(.34); //84.011
-    expect(galacticAge.neptune).toEqual(.17); // 164.78
+    expect(galacticAge.saturn).toEqual(.98);
+    expect(galacticAge.uranus).toEqual(.34);
+    expect(galacticAge.neptune).toEqual(.17);
   });
 });
