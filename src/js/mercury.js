@@ -5,5 +5,6 @@ export class GalacticAge {
 
   currentAge(age){
     this.earth = age;
+    this.mercury = parseFloat((age/.24).toFixed(2));
   }
 }

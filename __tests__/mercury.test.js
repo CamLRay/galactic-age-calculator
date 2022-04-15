@@ -21,4 +21,16 @@ describe("Galactic Age", () => {
     galacticAge.currentAge(29);
     expect(galacticAge.mercury).toEqual(120.83);
   });
+
+  test("It should calculate the users current age for all planets orbital years", () => {
+    galacticAge.currentAge(29);
+    expect(galacticAge.mercury).toEqual(120.83);
+    expect(galacticAge.venus).toEqual(46.77);
+    expect(galacticAge.earth).toEqual(29);
+    expect(galacticAge.mars).toEqual(15.42);
+    expect(galacticAge.jupiter).toEqual(2.44);
+    expect(galacticAge.saturn).toEqual(.98); //29.457 years for orbit
+    expect(galacticAge.uranus).toEqual(.34); //84.011
+    expect(galacticAge.neptune).toEqual(.17); // 164.78
+  });
 });
