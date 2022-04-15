@@ -17,8 +17,8 @@ describe("Galactic Age", () => {
     expect(galacticAge.earth).toEqual(29);
   });
 
-  // test("It should calculate the users current age in Mercury years", () => {
-  //   galacticAge.currentAge(29);
-  //   expect(galacticAge.mercury).toEqual(120.83);
-  // });
+  test("It should calculate the users current age in Mercury years", () => {
+    galacticAge.currentAge(29);
+    expect(galacticAge.mercury).toEqual(120.83);
+  });
 });
