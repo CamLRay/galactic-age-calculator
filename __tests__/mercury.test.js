@@ -33,4 +33,10 @@ describe("Galactic Age", () => {
     expect(galacticAge.uranus).toEqual(.34);
     expect(galacticAge.neptune).toEqual(.17);
   });
+
+  test("It should calculate how many years left a person has to live on earth based on their life expectancy", () => {
+    galacticAge.currentAge(29);
+    galacticAge.lifeLeft(78.79);
+    expect(galacticAge.earthLeft).toEqual(49.79);
+  });
 });

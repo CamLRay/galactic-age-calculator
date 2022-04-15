@@ -13,4 +13,8 @@ export class GalacticAge {
     this.uranus = parseFloat((age/84.011).toFixed(4).slice(0,-2));
     this.neptune = parseFloat((age/164.78).toFixed(4).slice(0,-2));
   }
+
+  lifeLeft(expectancy) {
+    this.earthLeft = parseFloat((expectancy - this.earth).toFixed(4).slice(0,-2));
+  }
 }
