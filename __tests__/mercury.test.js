@@ -52,4 +52,10 @@ describe("Galactic Age", () => {
     expect(galacticAge.uranusLeft).toEqual(.59);
     expect(galacticAge.neptuneLeft).toEqual(.30);
   });
+
+  test("If life expectancy is surpassed return positive number passed expectancy for earth", () => {
+    galacticAge.currentAge(80);
+    galacticAge.lifeLeft(78.79);
+    expect(galacticAge.earthLeft).toEqual(1.21);
+  });
 });
