@@ -39,4 +39,17 @@ describe("Galactic Age", () => {
     galacticAge.lifeLeft(78.79);
     expect(galacticAge.earthLeft).toEqual(49.79);
   });
+
+  test("It should calculate how many years left a person has on each planet based on their life expectancy", () => {
+    galacticAge.currentAge(29);
+    galacticAge.lifeLeft(78.79);
+    expect(galacticAge.mercuryLeft).toEqual(207.45);
+    expect(galacticAge.venusLeft).toEqual(80.30);
+    expect(galacticAge.earthLeft).toEqual(49.79);
+    expect(galacticAge.marsLeft).toEqual(26.48);
+    expect(galacticAge.jupiterLeft).toEqual(4.19);
+    expect(galacticAge.saturnLeft).toEqual(1.69);
+    expect(galacticAge.uranusLeft).toEqual(.59);
+    expect(galacticAge.neptuneLeft).toEqual(.30);
+  });
 });
