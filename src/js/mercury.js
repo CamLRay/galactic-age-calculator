@@ -1,5 +1,5 @@
 export class GalacticAge {
   constructor(){
-    this.mercury ="";
+    this.earth ="";
   }
 }
