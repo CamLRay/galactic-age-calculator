@@ -76,4 +76,10 @@ describe("Galactic Age", () => {
     galacticAge.lifeLeft(78.79);
     expect(galacticAge.expectancyBeat).toEqual(true);
   });
+
+  test("It should add a boolean to the object if the life expectancy is exceeded", () => {
+    galacticAge.currentAge(29);
+    galacticAge.lifeLeft(78.79);
+    expect(galacticAge.expectancyBeat).toEqual(false);
+  });
 });
