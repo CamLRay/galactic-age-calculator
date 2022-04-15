@@ -26,6 +26,13 @@ export class GalacticAge {
 
     if(this.earth > expectancy) {
       this.earthLeft = Math.abs(this.earthLeft);
+      this.mercuryLeft = Math.abs(this.mercuryLeft);
+      this.venusLeft = Math.abs(this.venusLeft);
+      this.marsLeft = Math.abs(this.marsLeft);
+      this.jupiterLeft = Math.abs(this.jupiterLeft);
+      this.saturnLeft = Math.abs(this.saturnLeft);
+      this.uranusLeft = Math.abs(this.uranusLeft);
+      this.neptuneLeft = Math.abs(this.neptuneLeft);
     }
   }
 }
