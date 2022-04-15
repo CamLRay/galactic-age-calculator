@@ -40,5 +40,10 @@ export class GalacticAge {
 }
 
 export class User{
-  
+  constructor(name, birthdate, todaysDate, lifeExpectancy,){
+    this.name = name;
+    this.birthdate = birthdate;
+    this.todaysDate = todaysDate;
+    this.lifeExpectancy = lifeExpectancy;
+  }
 }

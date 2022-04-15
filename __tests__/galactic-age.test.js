@@ -87,14 +87,14 @@ describe("Galactic Age", () => {
 describe("User", ()=> {
   let user;
   beforeEach(() => {
-    user = new User();
+    user = new User("","","","");
   });
   afterEach(() => {
     user = {};
   });
   test("It should create an object with a empty user properties", () => {
     expect(user.name).toEqual("");
-    expect(user.birthDate).toEqual("");
+    expect(user.birthdate).toEqual("");
     expect(user.lifeExpectancy).toEqual("");
     expect(user.todaysDate).toEqual("")
   });
