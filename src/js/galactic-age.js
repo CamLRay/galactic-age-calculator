@@ -48,11 +48,12 @@ export class User{
   }
 
   findAge(){
-    
     const birthdate = this.birthdate.split("-");
     const todaysDate = this.todaysDate.split("-");
     const yearsToBirth = parseInt(birthdate[2]) + (parseInt(birthdate[0])/12) + (parseInt(birthdate[1])/30.437);
     const yearsToToday = parseInt(todaysDate[2]) + (parseInt(todaysDate[0])/12) + (parseInt(todaysDate[1])/30.437);
     this.age = parseFloat((yearsToToday - yearsToBirth).toFixed(2).slice(0,-2));
   }
+
+
 }
