@@ -23,5 +23,9 @@ export class GalacticAge {
     this.saturnLeft = parseFloat((this.earthLeft/29.457).toFixed(4).slice(0,-2));
     this.uranusLeft = parseFloat((this.earthLeft/84.011).toFixed(4).slice(0,-2));
     this.neptuneLeft = parseFloat((this.earthLeft/164.78).toFixed(4).slice(0,-2));
+
+    if(this.earth > expectancy) {
+      this.earthLeft = Math.abs(this.earthLeft);
+    }
   }
 }
