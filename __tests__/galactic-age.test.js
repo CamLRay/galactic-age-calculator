@@ -85,17 +85,17 @@ describe("Galactic Age", () => {
 });
 
 describe("User", ()=> {
-  let user;
-  beforeEach(() => {
-    user = new User("","","","");
-  });
-  afterEach(() => {
-    user = {};
-  });
   test("It should create an object with a empty user properties", () => {
+    let user = new User("","","","")
     expect(user.name).toEqual("");
     expect(user.birthdate).toEqual("");
     expect(user.lifeExpectancy).toEqual("");
     expect(user.todaysDate).toEqual("")
+  });
+
+  test("It should calculate the users age based on birthdate and todays date", () => {
+    let user = new User("Cameron","11-07-1992","4-15-2022","78.79")
+    user.findAge();
+    expect(user.age).toEqual(29);
   });
 });
