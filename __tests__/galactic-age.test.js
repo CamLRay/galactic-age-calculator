@@ -94,13 +94,13 @@ describe("User", ()=> {
   });
 
   test("It should calculate the users age based on birthdate and todays date", () => {
-    let user = new User("Cameron","1992-11-07","2022-4-15","78.79")
+    let user = new User("Cameron","1992-11-07","2022-3-15","78.79")
     user.findAge();
     expect(user.age).toEqual(29);
   });
 
   test("It should calculate the users age based on birthdate and todays date and return the age", () => {
-    let user = new User("Cameron","1992-11-07","2022-4-15","78.79")
+    let user = new User("Cameron","1992-11-07","2022-3-15","78.79")
     expect(user.findAge()).toEqual(29);
   });
 });
