@@ -44,7 +44,7 @@ export class User{
     this.name = name;
     this.birthdate = birthdate;
     this.todaysDate = todaysDate;
-    this.lifeExpectancy = lifeExpectancy;
+    this.lifeExpectancy = parseFloat(lifeExpectancy);
   }
 
   findAge(){
