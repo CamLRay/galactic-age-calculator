@@ -38,6 +38,10 @@ $ npm run start
 ```
 $ npm run build
 ```
+* run tests to see they are passing using jest
+```
+$ npm test
+```
 
 ## Known Bugs
 
