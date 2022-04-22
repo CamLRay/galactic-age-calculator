@@ -89,7 +89,7 @@ describe("User", ()=> {
     let user = new User("","","","")
     expect(user.name).toEqual("");
     expect(user.birthdate).toEqual("");
-    expect(user.lifeExpectancy).toEqual("");
+    expect(user.lifeExpectancy).toEqual(NaN);
     expect(user.todaysDate).toEqual("")
   });
 
