@@ -1,6 +1,6 @@
 {
   "homepage":"http://camlray.github.io/galactic-age-calculator",
-  "name": "",
+  "name": "galactic-ages-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
